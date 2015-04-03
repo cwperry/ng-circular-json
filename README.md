@@ -8,12 +8,16 @@ An [Angular](https://angularjs.org/) service for [CircularJSON](https://github.c
 bower install ng-circular-json --save
 ```
 
+## Dependencies
+Depends on circular-json.js https://github.com/WebReflection/circular-json 
+
 ##Usage
 
-First, include the ng-circular-json.js file in your html.  The example assumes you have bower using the default 
-components directory. 
+First, include the circular-json.js and ng-circular-json.js files in your html.  The example assumes you have bower 
+using the default components directory. 
 
 ```html
+<script src="bower_components/circular-json/build/circular-json.js"></script>
 <script src="bower_components/ng-circular-json/dist/ng-circular-json.js"></script>
 ```
 
