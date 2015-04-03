@@ -1,5 +1,5 @@
 gulp = require 'gulp'
-coffee = require 'coffee'
+coffee = require 'gulp-coffee'
 concat = require 'gulp-concat'
 uglify = require 'gulp-uglify'
 sourcemaps = require 'gulp-sourcemaps'
@@ -26,6 +26,7 @@ gulp.task 'minify', ['build'], ->
   .pipe(sourcemaps.init())
   .pipe(coffee({bare: true}))
   .pipe(concat('ng-circular-json.min.js'))
+  .pipe(uglify())
   .pipe(sourcemaps.write())
   .pipe(gulp.dest(paths.jsDist))
 
