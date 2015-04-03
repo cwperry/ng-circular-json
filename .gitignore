@@ -29,4 +29,7 @@ crashlytics-build.properties
 #bower dependencies
 bower_components
 
+#node dependencies
+node_modules
+
 
